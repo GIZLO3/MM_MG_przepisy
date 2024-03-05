@@ -14,17 +14,17 @@
             </StackLayout>
 
             <Rectangle WidthRequest="400" HorizontalOptions="Center" Opacity="0.4" BackgroundColor="#6244DB"/>
-            <Label Text="Składniki"/>
+            <Label Text="Składniki" FontSize="16"/>
 
             <StackLayout>
-                <ListView x:Name="IngredientsList">
+                <ListView x:Name="IngredientsList" HasUnevenRows="True">
                     <ListView.ItemTemplate>
-                        <DataTemplate>
+                        <DataTemplate >
                             <ViewCell>
-                                <StackLayout Orientation="Horizontal">
-                                    <Label Text="{Binding Name}"/>
-                                    <Label Text="{Binding Amount}"/>
-                                    <Label Text="{Binding Unit}"/>
+                                <StackLayout Orientation="Horizontal" Margin="10, 0, 10, 10">
+                                    <Label Text="{Binding Name}" FontSize="18" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Amount}" VerticalTextAlignment="Center"/>
+                                    <Label Text="{Binding Unit}" VerticalTextAlignment="Center"/>
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>
@@ -33,14 +33,14 @@
             </StackLayout>
 
             <Rectangle WidthRequest="400" HorizontalOptions="Center" Opacity="0.4" BackgroundColor="#6244DB"/>
-            <Label Text="Kroki"/>
+            <Label Text="Kroki" FontSize="16"/>
 
             <StackLayout>
                 <ListView x:Name="StepsList">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
-                                <StackLayout Orientation="Horizontal">
+                                <StackLayout Orientation="Horizontal" Margin="10, 0, 0, 0">
                                     <Label Text="{Binding .}"/>
                                 </StackLayout>
                             </ViewCell>
