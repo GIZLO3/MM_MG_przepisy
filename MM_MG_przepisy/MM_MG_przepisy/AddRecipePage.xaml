@@ -33,7 +33,7 @@
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
                     </Grid>
-                    <Button Text="Dodaj krok"/>
+                    <Button Text="Dodaj krok" Clicked="AddStepsEntry"/>
                 </StackLayout>
 
                 <Button Text="Utwórz przepis" TextColor="#FFF"/>

@@ -66,5 +66,10 @@ namespace MM_MG_przepisy
 
             stepsEntriesList.Add(entry);
         }
+
+        private void AddStepsEntry(object sender, EventArgs e)
+        {
+            AddStepsEntry();
+        }
     }
 }
