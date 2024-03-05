@@ -23,7 +23,7 @@
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
                     </Grid>
-                    <Button Text="Dodaj składnik"/>
+                    <Button Text="Dodaj składnik" Clicked="AddIngredientEntry"/>
                 </StackLayout>
 
                 <StackLayout Padding="5">

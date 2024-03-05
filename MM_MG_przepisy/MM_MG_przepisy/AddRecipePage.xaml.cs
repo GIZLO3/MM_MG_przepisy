@@ -17,6 +17,7 @@ namespace MM_MG_przepisy
         public AddRecipePage()
         {
             InitializeComponent();
+            AddIngredientEntry();
         }
 
         private void AddIngredientEntry()
@@ -40,6 +41,11 @@ namespace MM_MG_przepisy
             entryList[2].Placeholder = "Jednostka";
 
             ingredientEntriesList.Add(entryList);
+        }
+
+        private void AddIngredientEntry(object sender, EventArgs e)
+        {
+            AddIngredientEntry();
         }
     }
 }
