@@ -14,5 +14,10 @@ namespace MM_MG_przepisy
         {
             InitializeComponent();
         }
+
+        private void RecipeItemTapped(object sender, ItemTappedEventArgs e)
+        {
+
+        }
     }
 }
