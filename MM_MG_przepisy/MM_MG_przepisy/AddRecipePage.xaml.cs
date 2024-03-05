@@ -34,6 +34,11 @@ namespace MM_MG_przepisy
                 Ingredients.Children.Add(entry);
             }
 
+            entryList[0].Placeholder = "Składnik";
+            entryList[1].Placeholder = "Ilość";
+            entryList[1].Keyboard = Keyboard.Numeric;
+            entryList[2].Placeholder = "Jednostka";
+
             ingredientEntriesList.Add(entryList);
         }
     }
