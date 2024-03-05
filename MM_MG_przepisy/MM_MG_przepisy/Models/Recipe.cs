@@ -6,5 +6,6 @@ namespace MM_MG_przepisy.Models
 {
     public class Recipe
     {
+        public List<Ingredient> Ingredients { get; set; }
     }
 }
