@@ -93,7 +93,17 @@ namespace MM_MG_przepisy
                     }
                 }
 
+                var steps = new List<string>();
+                foreach(var step in stepsEntriesList)
+                {
+                    if (!string.IsNullOrEmpty(step.Text))
+                    {
+                        steps.Add(step.Text);
+                    }
+                }
+
                 recipe.Ingredients = ingredients;
+                recipe.Steps = steps;
             }
             else
             {
