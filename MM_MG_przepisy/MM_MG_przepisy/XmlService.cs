@@ -31,6 +31,11 @@ namespace MM_MG_przepisy
                 sr.Close();
             }
 
+            foreach (var recipe in recpies)
+            {
+                recipe.Image = new Uri(recipe.ImageSource);
+            }
+
             return recpies;
         }
     }
