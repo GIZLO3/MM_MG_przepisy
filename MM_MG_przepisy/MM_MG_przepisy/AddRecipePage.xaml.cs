@@ -57,6 +57,8 @@ namespace MM_MG_przepisy
             label.Text = (stepsEntriesList.Count() + 1).ToString();
             Grid.SetRow(label, stepsEntriesList.Count());
             Grid.SetColumn(label, 0);
+            label.FontSize = 16;
+            label.VerticalOptions = LayoutOptions.Center;
             Steps.Children.Add(label);
 
             var entry = new Entry();
