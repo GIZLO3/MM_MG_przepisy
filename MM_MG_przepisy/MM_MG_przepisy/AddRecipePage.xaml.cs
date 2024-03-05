@@ -110,7 +110,10 @@ namespace MM_MG_przepisy
                 recipe.CookingTime = CookingTime.Text;
                 recipe.Rate = int.Parse(RecipeRate.Text);
 
-                
+                MainPage.recipes.Add(recipe);
+                XmlService.SaveRecipes(MainPage.recipes);
+
+                Navigation.PopAsync();
             }
             else
             {
