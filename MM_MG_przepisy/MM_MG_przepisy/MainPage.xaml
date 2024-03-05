@@ -7,24 +7,26 @@
         <ListView x:Name="RecipesList" HasUnevenRows="True" ItemTapped="RecipeItemTapped">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout>
-                        <Image Source="{Binding Image}"/>
-
+                    <ViewCell>
                         <StackLayout>
-                            <Label Text="{Binding Name}"/>
-                            <Label Text="{Binding CookingTime}"/>
-                        </StackLayout>
+                            <Image Source="{Binding Image}"/>
 
-                        <StackLayout Orientation="Horizontal">
-                            <Label Text="Ocena: "/>
+                            <StackLayout>
+                                <Label Text="{Binding Name}"/>
+                                <Label Text="{Binding CookingTime}"/>
+                            </StackLayout>
 
                             <StackLayout Orientation="Horizontal">
-                                <Label Text="("/>
-                                <Label Text="{Binding Rate}"/>
-                                <Label Text="/ 5)"/>
+                                <Label Text="Ocena: "/>
+
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="("/>
+                                    <Label Text="{Binding Rate}"/>
+                                    <Label Text="/ 5)"/>
+                                </StackLayout>
                             </StackLayout>
                         </StackLayout>
-                    </StackLayout>
+                    </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
