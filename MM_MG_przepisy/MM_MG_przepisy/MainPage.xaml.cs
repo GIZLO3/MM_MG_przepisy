@@ -20,7 +20,12 @@ namespace MM_MG_przepisy
 
         private void RecipeItemTapped(object sender, ItemTappedEventArgs e)
         {
+            var recipe = e.Item as Recipe;
 
+            if (recipe != null)
+            {
+                Navigation.PushAsync(new RecipeDetails(recipe));
+            }
         }
 
         private void GoToAddRecipePage(object sender, EventArgs e)
