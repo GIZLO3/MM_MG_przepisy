@@ -22,5 +22,10 @@ namespace MM_MG_przepisy
         {
 
         }
+
+        private void GoToAddRecipePage(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AddRecipePage());
+        }
     }
 }
