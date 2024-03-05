@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MM_MG_przepisy.RecipeDetails">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="RecipeRate"/>
+
+            <Image x:Name="RecipeImage"/>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Czas przygotowania: "/>
+                <Label x:Name="RecipeCookingTime"/>
+            </StackLayout>
+
+            <Rectangle WidthRequest="400" HorizontalOptions="Center" Opacity="0.4" BackgroundColor="#6244DB"/>
+            <Label Text="Składniki"/>
+
+            <StackLayout>
+                <ListView x:Name="Ingredients">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Name}"/>
+                                <Label Text="{Binding Amount}"/>
+                                <Label Text="{Binding Unit}"/>
+                            </StackLayout>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+
+            <Rectangle WidthRequest="400" HorizontalOptions="Center" Opacity="0.4" BackgroundColor="#6244DB"/>
+            <Label Text="Kroki"/>
+
+            <StackLayout>
+                <ListView x:Name="Ingredients">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding .}"/>
+                            </StackLayout>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
