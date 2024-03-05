@@ -50,7 +50,14 @@ namespace MM_MG_przepisy
 
         private void AddStepsEntry()
         {
+            var entry = new Entry();
+            Steps.RowDefinitions.Add(new RowDefinition());
 
+            Grid.SetRow(entry, stepsEntriesList.Count());
+            Grid.SetColumn(entry, 1);
+            entry.Placeholder = "Krok";
+
+            Steps.Children.Add(entry);
         }
     }
 }
