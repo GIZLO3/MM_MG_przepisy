@@ -47,5 +47,10 @@ namespace MM_MG_przepisy
         {
             AddIngredientEntry();
         }
+
+        private void AddStepsEntry()
+        {
+
+        }
     }
 }
