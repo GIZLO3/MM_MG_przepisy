@@ -26,7 +26,7 @@
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
                     </Grid>
-                    <Button Text="Dodaj składnik"/>
+                    <Button Text="Dodaj składnik" Clicked="AddIngredientEntry"/>
                 </StackLayout>
 
                 <Label Text="Kroki" FontSize="18" TextColor="#231D2B"/>
@@ -39,10 +39,10 @@
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
                     </Grid>
-                    <Button Text="Dodaj krok"/>
+                    <Button Text="Dodaj krok" Clicked="AddStepsEntry"/>
                 </StackLayout>
+                <Button Text="Utwórz przepis" TextColor="#FFF" BackgroundColor="#6244DB" Clicked="AddRecipe"/>
 
-                <Button Text="Utwórz przepis" TextColor="#FFF" BackgroundColor="#6244DB"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
