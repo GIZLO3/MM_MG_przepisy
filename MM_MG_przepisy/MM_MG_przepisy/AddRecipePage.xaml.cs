@@ -74,7 +74,14 @@ namespace MM_MG_przepisy
 
         private void AddRecipe(object sender, EventArgs e)
         {
+            if(!string.IsNullOrEmpty(RecipeImage.Text) && !string.IsNullOrEmpty(RecipeName.Text) && !string.IsNullOrEmpty(CookingTime.Text) && !string.IsNullOrEmpty(RecipeRate.Text))
+            {
 
+            }
+            else
+            {
+                DisplayAlert("Błąd", "Wypełnij pola", "OK");
+            }
         }
     }
 }
