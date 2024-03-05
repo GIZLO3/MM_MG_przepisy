@@ -10,7 +10,7 @@ namespace MM_MG_przepisy
 {
     public class XmlService
     {
-        private static string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "recipes.xml");
+        private static string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "recipes2.xml");
         private static XmlSerializer XmlSerializer = new XmlSerializer(typeof(ObservableCollection<Recipe>));
 
         public static void SaveRecipes(ObservableCollection<Recipe> recipes)
@@ -29,11 +29,11 @@ namespace MM_MG_przepisy
                 var sr = new StreamReader(path);
                 recpies = (ObservableCollection<Recipe>)XmlSerializer.Deserialize(sr);
                 sr.Close();
-            }
 
-            foreach (var recipe in recpies)
-            {
-                recipe.Image = new Uri(recipe.ImageSource);
+                foreach (var recipe in recpies)
+                {
+                    recipe.Image = new Uri(recipe.ImageSource);
+                }
             }
 
             return recpies;
