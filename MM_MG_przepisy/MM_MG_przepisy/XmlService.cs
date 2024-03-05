@@ -19,5 +19,19 @@ namespace MM_MG_przepisy
             XmlSerializer.Serialize(sw, recipes);
             sw.Close();
         }
+
+        public static ObservableCollection<Recipe> GetRecipes()
+        {
+            var recpies = new ObservableCollection<Recipe>();
+
+            if (File.Exists(path))
+            {
+                var sr = new StreamReader(path);
+                recpies = (ObservableCollection<Recipe>)XmlSerializer.Deserialize(sr);
+                sr.Close();
+            }
+
+            return recpies;
+        }
     }
 }
