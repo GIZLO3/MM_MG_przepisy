@@ -4,9 +4,9 @@
              x:Class="MM_MG_przepisy.AddRecipePage" Title="Dodaj przepis">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout>
-                <Label Text="Podstawowe informacje"/>
-                <Rectangle WidthRequest="400" HorizontalOptions="Center" Opacity="0.4" BackgroundColor="#676071"/>
+            <StackLayout Margin="5">
+                <Label Text="Podstawowe informacje" FontSize="18" TextColor="#231D2B"/>
+                <Rectangle WidthRequest="400" HorizontalOptions="Center" Opacity="0.4" BackgroundColor="#6244DB"/>
 
                 <StackLayout Padding="5">
                     <Entry x:Name="RecipeImage" Placeholder="Zdjęcie"/>
@@ -14,6 +14,9 @@
                     <Entry x:Name="CookingTime" Placeholder="Czas przygotowania"/>
                     <Entry x:Name="RecipeRate" Placeholder="Ocena przepisu"/>
                 </StackLayout>
+
+                <Label Text="Składniki" FontSize="18" TextColor="#231D2B"/>
+                <Rectangle WidthRequest="400" HorizontalOptions="Center" Opacity="0.4" BackgroundColor="#6244DB"/>
 
                 <StackLayout Padding="5">
                     <Grid x:Name="Ingredients">
@@ -26,6 +29,9 @@
                     <Button Text="Dodaj składnik"/>
                 </StackLayout>
 
+                <Label Text="Kroki" FontSize="18" TextColor="#231D2B"/>
+                <Rectangle WidthRequest="400" HorizontalOptions="Center" Opacity="0.4" BackgroundColor="#6244DB"/>
+
                 <StackLayout Padding="5">
                     <Grid x:Name="Steps">
                         <Grid.ColumnDefinitions>
@@ -36,7 +42,7 @@
                     <Button Text="Dodaj krok"/>
                 </StackLayout>
 
-                <Button Text="Utwórz przepis" TextColor="#FFF"/>
+                <Button Text="Utwórz przepis" TextColor="#FFF" BackgroundColor="#6244DB"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
