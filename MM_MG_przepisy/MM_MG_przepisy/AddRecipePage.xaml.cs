@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MM_MG_przepisy.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -76,7 +77,23 @@ namespace MM_MG_przepisy
         {
             if(!string.IsNullOrEmpty(RecipeImage.Text) && !string.IsNullOrEmpty(RecipeName.Text) && !string.IsNullOrEmpty(CookingTime.Text) && !string.IsNullOrEmpty(RecipeRate.Text))
             {
+                var recipe = new Recipe();
 
+                var ingredients = new List<Ingredient>();
+                foreach(var entryList in ingredientEntriesList)
+                {
+                    if (!string.IsNullOrEmpty(entryList[0].Text) && !string.IsNullOrEmpty(entryList[0].Text) && !string.IsNullOrEmpty(entryList[0].Text))
+                    {
+                        var ingredient = new Ingredient();
+                        ingredient.Name = entryList[0].Text;
+                        ingredient.Amount = int.Parse(entryList[1].Text);
+                        ingredient.Unit = entryList[2].Text;
+
+                        ingredients.Add(ingredient);
+                    }
+                }
+
+                recipe.Ingredients = ingredients;
             }
             else
             {
