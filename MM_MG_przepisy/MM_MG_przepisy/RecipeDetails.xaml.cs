@@ -18,7 +18,7 @@ namespace MM_MG_przepisy
             InitializeComponent();
 
             Title = recipe.Name;
-            RecipeRate.Text = recipe.Rate + " / 5";
+            RecipeRate.Text = "Ocena: " + recipe.Rate + " / 5";
             RecipeImage.Source = recipe.Image;
             RecipeCookingTime.Text = recipe.CookingTime;
 

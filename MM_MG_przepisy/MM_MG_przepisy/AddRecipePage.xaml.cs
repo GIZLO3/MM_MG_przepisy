@@ -19,6 +19,7 @@ namespace MM_MG_przepisy
         {
             InitializeComponent();
             AddIngredientEntry();
+            AddStepsEntry();
         }
 
         private void AddIngredientEntry()
@@ -26,7 +27,7 @@ namespace MM_MG_przepisy
             var entryList = new List<Entry>();
             Ingredients.RowDefinitions.Add(new RowDefinition());
 
-            for(int i=0; i<3; i++)
+            for (int i = 0; i < 3; i++)
             {
                 var entry = new Entry();
                 Grid.SetRow(entry, ingredientEntriesList.Count());
@@ -55,8 +56,10 @@ namespace MM_MG_przepisy
 
             var label = new Label();
             label.Text = (stepsEntriesList.Count() + 1).ToString();
+
             Grid.SetRow(label, stepsEntriesList.Count());
             Grid.SetColumn(label, 0);
+
             label.FontSize = 16;
             label.VerticalOptions = LayoutOptions.Center;
             Steps.Children.Add(label);
@@ -77,12 +80,12 @@ namespace MM_MG_przepisy
 
         private void AddRecipe(object sender, EventArgs e)
         {
-            if(!string.IsNullOrEmpty(RecipeImage.Text) && !string.IsNullOrEmpty(RecipeName.Text) && !string.IsNullOrEmpty(CookingTime.Text) && !string.IsNullOrEmpty(RecipeRate.Text))
+            if (!string.IsNullOrEmpty(RecipeImage.Text) && !string.IsNullOrEmpty(RecipeName.Text) && !string.IsNullOrEmpty(CookingTime.Text) && !string.IsNullOrEmpty(RecipeRate.Text))
             {
                 var recipe = new Recipe();
 
                 var ingredients = new List<Ingredient>();
-                foreach(var entryList in ingredientEntriesList)
+                foreach (var entryList in ingredientEntriesList)
                 {
                     if (!string.IsNullOrEmpty(entryList[0].Text) && !string.IsNullOrEmpty(entryList[1].Text) && !string.IsNullOrEmpty(entryList[2].Text))
                     {
@@ -96,7 +99,7 @@ namespace MM_MG_przepisy
                 }
 
                 var steps = new List<string>();
-                foreach(var step in stepsEntriesList)
+                foreach (var step in stepsEntriesList)
                 {
                     if (!string.IsNullOrEmpty(step.Text))
                     {
