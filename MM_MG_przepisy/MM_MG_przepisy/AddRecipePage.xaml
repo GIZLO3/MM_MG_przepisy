@@ -12,6 +12,7 @@
                     <Entry x:Name="RecipeImage" Placeholder="Zdjęcie"/>
                     <Entry x:Name="RecipeName" Placeholder="Nazwa przepisu"/>
                     <Entry x:Name="CookingTime" Placeholder="Czas przygotowania"/>
+                    <Entry x:Name="RecipeRate" Placeholder="Ocena przepisu"/>
                 </StackLayout>
 
                 <StackLayout Padding="5">
@@ -34,7 +35,6 @@
                     </Grid>
                     <Button Text="Dodaj krok"/>
                 </StackLayout>
-
 
                 <Button Text="Utwórz przepis" TextColor="#FFF"/>
             </StackLayout>
