@@ -71,5 +71,10 @@ namespace MM_MG_przepisy
         {
             AddStepsEntry();
         }
+
+        private void AddRecipe(object sender, EventArgs e)
+        {
+
+        }
     }
 }

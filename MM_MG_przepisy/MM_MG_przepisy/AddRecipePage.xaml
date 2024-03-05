@@ -36,7 +36,7 @@
                     <Button Text="Dodaj krok" Clicked="AddStepsEntry"/>
                 </StackLayout>
 
-                <Button Text="Utwórz przepis" TextColor="#FFF"/>
+                <Button Text="Utwórz przepis" TextColor="#FFF" Clicked="AddRecipe"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
