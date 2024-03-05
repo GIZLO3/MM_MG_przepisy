@@ -57,6 +57,8 @@ namespace MM_MG_przepisy
             label.Text = (stepsEntriesList.Count() + 1).ToString();
             Grid.SetRow(label, stepsEntriesList.Count());
             Grid.SetColumn(label, 0);
+            label.FontSize = 16;
+            label.VerticalOptions = LayoutOptions.Center;
             Steps.Children.Add(label);
 
             var entry = new Entry();
@@ -105,7 +107,7 @@ namespace MM_MG_przepisy
                 recipe.Ingredients = ingredients;
                 recipe.Steps = steps;
 
-                recipe.ImageSource = RecipeImage.Text;
+                recipe.ImageSource = "https://cdn.galleries.smcloud.net/t/galleries/gf-hHjs-dYzQ-DWsb_soczysta-pieczen-wieprzowa-664x442-nocrop.jpg";
                 recipe.Name = RecipeName.Text;
                 recipe.CookingTime = CookingTime.Text;
                 recipe.Rate = int.Parse(RecipeRate.Text);

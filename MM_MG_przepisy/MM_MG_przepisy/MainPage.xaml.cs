@@ -18,6 +18,15 @@ namespace MM_MG_przepisy
             InitializeComponent();
         }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            recipes = XmlService.GetRecipes();
+
+            RecipesList.ItemsSource = recipes;
+        }
+
         private void RecipeItemTapped(object sender, ItemTappedEventArgs e)
         {
             var recipe = e.Item as Recipe;

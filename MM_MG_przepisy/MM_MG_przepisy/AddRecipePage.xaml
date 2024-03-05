@@ -41,9 +41,7 @@
                     </Grid>
                     <Button Text="Dodaj krok" Clicked="AddStepsEntry"/>
                 </StackLayout>
-                <Button Text="Utwórz przepis" TextColor="#FFF" BackgroundColor="#6244DB" Clicked="AddRecipe"/>
-
-                <Button Text="Utwórz przepis" TextColor="#FFF" BackgroundColor="#6244DB" VerticalOptions="EndAndExpand"/>
+                <Button Text="Utwórz przepis" TextColor="#FFF" BackgroundColor="#6244DB" VerticalOptions="EndAndExpand" Clicked="AddRecipe"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
