@@ -12,7 +12,7 @@
                     <Entry x:Name="RecipeImage" Placeholder="Zdjęcie"/>
                     <Entry x:Name="RecipeName" Placeholder="Nazwa przepisu"/>
                     <Entry x:Name="CookingTime" Placeholder="Czas przygotowania"/>
-                    <Entry x:Name="RecipeRate" Placeholder="Ocena przepisu"/>
+                    <Entry x:Name="RecipeRate" Placeholder="Ocena przepisu" Keyboard="Numeric"/>
                 </StackLayout>
 
                 <Label Text="Składniki" FontSize="18" TextColor="#231D2B" Margin="0, 30, 0, 0"/>
