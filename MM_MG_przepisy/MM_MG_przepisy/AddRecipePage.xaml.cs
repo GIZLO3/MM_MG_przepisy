@@ -84,7 +84,7 @@ namespace MM_MG_przepisy
                 var ingredients = new List<Ingredient>();
                 foreach(var entryList in ingredientEntriesList)
                 {
-                    if (!string.IsNullOrEmpty(entryList[0].Text) && !string.IsNullOrEmpty(entryList[0].Text) && !string.IsNullOrEmpty(entryList[0].Text))
+                    if (!string.IsNullOrEmpty(entryList[0].Text) && !string.IsNullOrEmpty(entryList[1].Text) && !string.IsNullOrEmpty(entryList[2].Text))
                     {
                         var ingredient = new Ingredient();
                         ingredient.Name = entryList[0].Text;
