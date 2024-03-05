@@ -18,5 +18,21 @@ namespace MM_MG_przepisy
         {
             InitializeComponent();
         }
+
+        private void AddIngredientEntry()
+        {
+            var entryList = new List<Entry>();
+            Ingredients.RowDefinitions.Add(new RowDefinition());
+
+            for(int i=0; i<3; i++)
+            {
+                var entry = new Entry();
+                Grid.SetRow(entry, IngredientEntriesList.Count());
+                Grid.SetColumn(entry, i);
+
+                entryList.Add(entry);
+                Ingredients.Children.Add(entry);
+            }
+        }
     }
 }
