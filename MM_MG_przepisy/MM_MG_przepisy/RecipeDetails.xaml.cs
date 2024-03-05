@@ -21,6 +21,9 @@ namespace MM_MG_przepisy
             RecipeRate.Text = recipe.Rate + " / 5";
             RecipeImage.Source = recipe.Image;
             RecipeCookingTime.Text = recipe.CookingTime;
+
+            IngredientsList.ItemsSource = recipe.Ingredients;
+            StepsList.ItemsSource = recipe.Steps;
         }
     }
 }
