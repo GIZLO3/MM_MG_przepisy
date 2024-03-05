@@ -10,5 +10,6 @@ namespace MM_MG_przepisy.Models
         public string CookingTime { get; set; }
         public int Rate { get; set; }
         public List<Ingredient> Ingredients { get; set; }
+        public List<string> Steps { get; set; }
     }
 }
