@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MM_MG_przepisy.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -17,7 +18,12 @@ namespace MM_MG_przepisy
 
         private void RecipeItemTapped(object sender, ItemTappedEventArgs e)
         {
+            var recipe = e.Item as Recipe;
 
+            if (recipe != null)
+            {
+                Navigation.PushAsync(new RecipeDetails(recipe));
+            }
         }
 
         private void GoToAddRecipePage(object sender, EventArgs e)

@@ -17,7 +17,7 @@
             <Label Text="Składniki"/>
 
             <StackLayout>
-                <ListView x:Name="Ingredients">
+                <ListView x:Name="IngredientsList">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <StackLayout Orientation="Horizontal">
@@ -34,7 +34,7 @@
             <Label Text="Kroki"/>
 
             <StackLayout>
-                <ListView x:Name="Ingredients">
+                <ListView x:Name="StepsList">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <StackLayout Orientation="Horizontal">
