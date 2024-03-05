@@ -8,15 +8,15 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout>
-                            <Image Source="{Binding Image}"/>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="{Binding Image}" WidthRequest="60"/>
 
                             <StackLayout>
                                 <Label Text="{Binding Name}"/>
                                 <Label Text="{Binding CookingTime}"/>
                             </StackLayout>
 
-                            <StackLayout Orientation="Horizontal">
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" VerticalOptions="Center">
                                 <Label Text="Ocena: "/>
 
                                 <StackLayout Orientation="Horizontal">

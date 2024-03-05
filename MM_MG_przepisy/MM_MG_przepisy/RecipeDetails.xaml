@@ -20,11 +20,13 @@
                 <ListView x:Name="IngredientsList">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="{Binding Name}"/>
-                                <Label Text="{Binding Amount}"/>
-                                <Label Text="{Binding Unit}"/>
-                            </StackLayout>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Name}"/>
+                                    <Label Text="{Binding Amount}"/>
+                                    <Label Text="{Binding Unit}"/>
+                                </StackLayout>
+                            </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
@@ -37,9 +39,11 @@
                 <ListView x:Name="StepsList">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="{Binding .}"/>
-                            </StackLayout>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding .}"/>
+                                </StackLayout>
+                            </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
