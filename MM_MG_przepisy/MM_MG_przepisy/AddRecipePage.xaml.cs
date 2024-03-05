@@ -12,8 +12,8 @@ namespace MM_MG_przepisy
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AddRecipePage : ContentPage
     {
-        private List<List<Entry>> IngredientEntriesList = new List<List<Entry>>();
-        private List<Entry> StepsEntriesList = new List<Entry>();
+        private List<List<Entry>> ingredientEntriesList = new List<List<Entry>>();
+        private List<Entry> stepsEntriesList = new List<Entry>();
         public AddRecipePage()
         {
             InitializeComponent();
@@ -27,12 +27,14 @@ namespace MM_MG_przepisy
             for(int i=0; i<3; i++)
             {
                 var entry = new Entry();
-                Grid.SetRow(entry, IngredientEntriesList.Count());
+                Grid.SetRow(entry, ingredientEntriesList.Count());
                 Grid.SetColumn(entry, i);
 
                 entryList.Add(entry);
                 Ingredients.Children.Add(entry);
             }
+
+            ingredientEntriesList.Add(entryList);
         }
     }
 }
