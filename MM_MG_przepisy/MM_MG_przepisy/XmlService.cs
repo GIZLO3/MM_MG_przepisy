@@ -12,5 +12,12 @@ namespace MM_MG_przepisy
     {
         private static string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "recipes.xml");
         private static XmlSerializer XmlSerializer = new XmlSerializer(typeof(ObservableCollection<Recipe>));
+
+        public static void SaveRecipes(ObservableCollection<Recipe> recipes)
+        {
+            var sw = new StreamWriter(path);
+            XmlSerializer.Serialize(sw, recipes);
+            sw.Close();
+        }
     }
 }
