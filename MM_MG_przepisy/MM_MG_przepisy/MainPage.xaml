@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MM_MG_przepisy.MainPage">
+             x:Class="MM_MG_przepisy.MainPage" Title="Przepisy">
 
     <StackLayout>
         <ListView x:Name="RecipesList" HasUnevenRows="True" ItemTapped="RecipeItemTapped">
@@ -28,6 +28,8 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+
+        <Button Clicked="GoToAddRecipePage" Text="Dodaj przepis" HorizontalOptions="Center" WidthRequest="150" Padding="10" CornerRadius="10" BackgroundColor="#6244DB" TextColor="#FFF" Margin="0, 0, 0, 10"/>
     </StackLayout>
 
 </ContentPage>

@@ -6,7 +6,7 @@
         <ScrollView>
             <StackLayout>
                 <Label Text="Podstawowe informacje"/>
-                <Rectangle WidthRequest="400" HorizontalOptions="Center" Opacity="0.4" BackgroundColor="#676071"/>
+                <Rectangle WidthRequest="400" HorizontalOptions="Center" Opacity="0.4" BackgroundColor="#6244DB"/>
 
                 <StackLayout Padding="5">
                     <Entry x:Name="RecipeImage" Placeholder="Zdjęcie"/>
