@@ -6,6 +6,9 @@ namespace MM_MG_przepisy.Models
 {
     public class Recipe
     {
+        public string Name { get; set; }
+        public string CookingTime { get; set; }
+        public int Rate { get; set; }
         public List<Ingredient> Ingredients { get; set; }
     }
 }
