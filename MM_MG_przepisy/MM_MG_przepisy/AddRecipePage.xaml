@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MM_MG_przepisy.AddRecipePage" Title="Dodaj przepis">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Podstawowe informacje"/>
+                <Rectangle WidthRequest="400" HorizontalOptions="Center" Opacity="0.4" BackgroundColor="#676071"/>
+
+                <StackLayout Padding="5">
+                    <Entry x:Name="RecipeImage" Placeholder="Zdjęcie"/>
+                    <Entry x:Name="RecipeName" Placeholder="Nazwa przepisu"/>
+                    <Entry x:Name="CookingTime" Placeholder="Czas przygotowania"/>
+                    <Entry x:Name="RecipeRate" Placeholder="Ocena przepisu"/>
+                </StackLayout>
+
+                <StackLayout Padding="5">
+                    <Grid x:Name="Ingredients">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="170"/>
+                            <ColumnDefinition Width="70"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                    <Button Text="Dodaj składnik"/>
+                </StackLayout>
+
+                <StackLayout Padding="5">
+                    <Grid x:Name="Steps">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                    <Button Text="Dodaj krok"/>
+                </StackLayout>
+
+                <Button Text="Utwórz przepis" TextColor="#FFF"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
