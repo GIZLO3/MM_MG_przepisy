@@ -22,6 +22,7 @@
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
                     </Grid>
+                    <Button Text="Dodaj składnik"/>
                 </StackLayout>
 
                 <StackLayout Padding="5">
@@ -31,8 +32,11 @@
                             <ColumnDefinition/>
                         </Grid.ColumnDefinitions>
                     </Grid>
+                    <Button Text="Dodaj krok"/>
                 </StackLayout>
 
+
+                <Button Text="Utwórz przepis" TextColor="#FFF"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
