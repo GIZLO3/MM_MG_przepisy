@@ -104,6 +104,13 @@ namespace MM_MG_przepisy
 
                 recipe.Ingredients = ingredients;
                 recipe.Steps = steps;
+
+                recipe.ImageSource = RecipeImage.Text;
+                recipe.Name = RecipeName.Text;
+                recipe.CookingTime = CookingTime.Text;
+                recipe.Rate = int.Parse(RecipeRate.Text);
+
+                
             }
             else
             {
